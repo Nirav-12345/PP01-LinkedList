@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace LinkedListUC4
+namespace LinkedListUC5
 {
     public class Node
     {
@@ -16,9 +14,6 @@ namespace LinkedListUC4
         {
             this.data = data;
         }
-
-    
-
 
     }
 }

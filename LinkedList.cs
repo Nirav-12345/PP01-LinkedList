@@ -1,27 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace LinkedListUC4
+namespace LinkedListUC5
 {
     public class LinkedList
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public Node head;
 
         public void Add(int data)
@@ -63,44 +47,20 @@ namespace LinkedListUC4
             }
         }
 
-        public Node InsertAtParticularPosition(int position, int data)
+        
+
+
+        internal void pop()
         {
-            if (position < 1)
+            if (this.head == null)
             {
-                Console.WriteLine("Invalid Position");
+                Console.WriteLine("Deletion is not possible");
             }
 
-            if (position == 1)
-            {
-                var newNode = new Node(data);
-                newNode.Next = this.head;
-                head = newNode;
-            }
-            else
-            {
-                while (position-- != 0)
-                {
-                    if (position == 1)
-                    {
-                        Node node = new Node(data);
-                        node.Next = this.head.Next;
-                        head.Next = node;
-                        break;
-                    }
-                    head = head.Next;
-                }
-                if (position != 1)
-                {
-                    Console.WriteLine("Position out of range");
-                }
-            }
-            Console.WriteLine("Inserted value is " + head);
-            return head;
+            Console.WriteLine("Vlaue popped" + this.head.data);
+            this.head = this.head.Next;
         }
 
-
-
-
+        
+        }
     }
-}
-

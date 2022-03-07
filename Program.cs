@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LinkedListUC4
+namespace LinkedListUC5
 {
     class rogram
     {
@@ -15,8 +15,10 @@ namespace LinkedListUC4
             list.Add(30);
             list.Add(70);
             list.Display();
+            list.pop();
 
-            list.InsertAtParticularPosition(1, 30);
+
+
         }
     }
 }
