@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LinkedListUC6
+namespace LinkedListUC7
 {
     class rogram
     {
@@ -15,9 +15,11 @@ namespace LinkedListUC6
             list.Add(30);
             list.Add(70);
             list.Display();
-            
+
             list.pop();
             list.popmethod();
+            list.Search(30);
+            list.RemoveFirstNode();
 
 
 

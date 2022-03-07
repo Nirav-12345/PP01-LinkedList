@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkedListUC6
+namespace LinkedListUC7
 {
     public class Node
     {
@@ -20,4 +20,3 @@ namespace LinkedListUC6
 }
 
 
-    
