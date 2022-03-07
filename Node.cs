@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace LinkedListUC5
+namespace LinkedListUC6
 {
     public class Node
     {
-
         public int data;
         public Node Next;
 
@@ -17,3 +18,6 @@ namespace LinkedListUC5
 
     }
 }
+
+
+    

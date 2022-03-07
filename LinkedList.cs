@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace LinkedListUC5
+namespace LinkedListUC6
 {
     public class LinkedList
     {
@@ -61,6 +63,49 @@ namespace LinkedListUC5
             this.head = this.head.Next;
         }
 
-        
+
+        internal Node popmethod()
+        {
+            if (head==null)
+            {
+                return null;
+            }
+
+            if (head.Next==null)
+            {
+                return null;
+            }
+
+            Node newNode = head;
+            while(newNode.Next.Next !=null)
+            {
+                newNode = newNode.Next;
+            }
+
+            newNode.Next = null;
+
+            return head;
+
+
+           
         }
+
+
     }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+    
