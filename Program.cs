@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace LinkedListUC1
+namespace LinkedListUC4
 {
-    class Program
+    class rogram
     {
         static void Main(string[] args)
         {
@@ -16,8 +16,7 @@ namespace LinkedListUC1
             list.Add(70);
             list.Display();
 
-
-
+            list.InsertAtParticularPosition(1, 30);
         }
     }
 }
